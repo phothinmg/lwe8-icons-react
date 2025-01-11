@@ -1,6 +1,6 @@
 {
   "name": "lwe8-icons-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Icons with link for React, from Simple Icons",
   "exports": {
     ".": {
