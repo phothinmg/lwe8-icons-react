@@ -1,0 +1,15 @@
+src
+node_modules
+a.html
+pnpm-lock.yaml
+tsup.config.json
+tsconfig.json
+.babelrc.txt
+notes.txt
+a.tsx
+.gitignore
+a.js
+build
+.vscode
+biome.jsonc
+icons
