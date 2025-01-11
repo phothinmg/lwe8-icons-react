@@ -24,7 +24,32 @@ export type IconName =
 	| "wordpress"
 	| "youtube"
 	| "twitter-X"
-	| "rss";
+	| "rss"
+	| "next-js"
+	| "node-js"
+	| "notion"
+	| "npm"
+	| "numpy"
+	| "openai"
+	| "threads"
+	| "tailwind-css"
+	| "tiktok"
+	| "toml"
+	| "typescript"
+	| "ubuntu"
+	| "vercel"
+	| "vim"
+	| "vs-code"
+	| "vite"
+	| "vk"
+	| "yaml"
+	| "android"
+	| "angular"
+	| "apache"
+	| "apple"
+	| "biome"
+	| "bitbucket"
+	| "bluesky";
 
 export interface Icons {
 	name: IconName;
