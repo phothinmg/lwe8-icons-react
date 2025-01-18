@@ -52,12 +52,19 @@ export type IconName =
   | "bluesky"
   | "react"
   | "markdown"
-  | "daisy-ui";
+  | "daisy-ui"
+  | "laptop"
+  | "color-dark"
+  | "color-light"
+  | "bars"
+  | "email"
+  | "file-document";
 
 export interface Icons {
   name: IconName;
 
   d: string;
+  viewbox?: string;
 }
 
 export interface JsxSocialIconProps {

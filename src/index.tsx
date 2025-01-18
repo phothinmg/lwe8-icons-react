@@ -10,7 +10,10 @@ const getPathd = (name: IconName): string => {
   const pd = icons.find((i) => i.name === name) as Icons;
   return pd.d;
 };
-
+const getVB = (name: IconName): string => {
+  const pd = icons.find((i) => i.name === name) as Icons;
+  return pd.viewbox ?? "0 0 24 24";
+};
 /**
  * #### Component for rendering a icon with customizable properties.
  *
@@ -49,7 +52,7 @@ const getPathd = (name: IconName): string => {
 
 export default function ReactIcon({
   name,
-  href = "#",
+  href = "#0",
   target = "_blank",
   fillColor = "currentColor",
   fillOpacity = 0.7,
@@ -57,6 +60,7 @@ export default function ReactIcon({
   size = 24,
   title = name,
 }: JsxSocialIconProps): JSX.Element {
+  const [view_box, setViewBox] = useState<string>(() => getVB(name));
   const [pathd, setPathd] = useState<string>(() => getPathd(name));
   const [opacity, setOpacity] = useState<number>(fillOpacity);
   const [color, setColor] = useState<string>(fillColor);
@@ -67,6 +71,7 @@ export default function ReactIcon({
   const [tit, setTitle] = useState<string>(title);
   useEffect(() => {
     setPathd(getPathd(name));
+    setViewBox(getVB(name));
   }, [name]);
   useEffect(() => {
     setOpacity(fillOpacity);
@@ -99,7 +104,7 @@ export default function ReactIcon({
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
+          viewBox={view_box}
           width={sz}
           height={sz}
         >
