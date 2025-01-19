@@ -74,45 +74,6 @@ export interface JsxSocialIconProps {
    * ```
    */
   name: Icons["name"];
-  // Anchor Element
-  /**
-   * ```
-   * 'HTML Anchor Element Attribute "href"'
-   * ```
-   *
-   * ```html
-   * <a href=""></a>
-   *
-   * ```
-   */
-  href?: string;
-  /**
-   * ```
-   * 'HTML Anchor Element Attribute "target"'
-   * ```
-   *
-   * ```html
-   * <a href="" target=""></a>
-   *
-   * ```
-   */
-  target?: "_blank" | "_parent" | "_self" | "_top";
-  /**
-   * ```
-   * 'HTML Anchor Element `className`'
-   * ```
-   *
-   * ```
-   * 'Default style - {textDecoration: none, color: currentcolor }'
-   * ```
-   *
-   * ```html
-   *
-   * <a href="" target="" className=""></a>
-   *
-   * ```
-   */
-  className?: string;
   // Icon
   /**
    * ```
