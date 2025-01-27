@@ -13,5 +13,5 @@
     "declaration": true,
     "declarationDir": "./dist"
   },
-  "include": ["./src/index.tsx"]
+  "include": ["src/index.ts"]
 }
