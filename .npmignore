@@ -13,3 +13,4 @@ build
 .vscode
 biome.jsonc
 icons
+.qodo
